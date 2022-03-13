@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Search</title>
+  </head>
+  <body>
+    <h1>Search for Remote Jobs</h1>
+    <form action="/report" method="get">
+    <form><input placeholder='Job Keyword' required name="keyword"/><input id="mybutton" value="Search" name="submit1" type="submit" onclick="return loading();">
+    
+    </form>
+    <script>
+      function loading(){
+        var button=document.getElementById('mybutton');
+        button.value = 'Searching..';
+      }
+    </script>
+  </body>
+</html>
